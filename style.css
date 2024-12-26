@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 80vh;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+}
+h1{
+    font-size: 4rem;
+}
+span{
+    display: inline-flex;
+    align-items: center;
+    color: brown;
+}
+span::after{
+    content: "";
+    width: 3px;
+    height: 55px;
+    background-color: brown;
+    display: inline-block;
+    margin-left: 3px;
+    animation: blink 1s infinite;
+
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* .blinking-cursor {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    animation: blink 1s infinite;
+} */
